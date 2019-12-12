@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/scrumlogic_test_app/static/css/main.d1b05096.chunk.css",
+    "main.js": "/scrumlogic_test_app/static/js/main.17bba2ce.chunk.js",
+    "main.js.map": "/scrumlogic_test_app/static/js/main.17bba2ce.chunk.js.map",
+    "runtime-main.js": "/scrumlogic_test_app/static/js/runtime-main.a763d682.js",
+    "runtime-main.js.map": "/scrumlogic_test_app/static/js/runtime-main.a763d682.js.map",
+    "static/js/2.22e6b741.chunk.js": "/scrumlogic_test_app/static/js/2.22e6b741.chunk.js",
+    "static/js/2.22e6b741.chunk.js.map": "/scrumlogic_test_app/static/js/2.22e6b741.chunk.js.map",
+    "index.html": "/scrumlogic_test_app/index.html",
+    "precache-manifest.b7bdc89f8fd2209e925c7f09a14f229c.js": "/scrumlogic_test_app/precache-manifest.b7bdc89f8fd2209e925c7f09a14f229c.js",
+    "service-worker.js": "/scrumlogic_test_app/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/scrumlogic_test_app/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.22e6b741.chunk.js.LICENSE": "/scrumlogic_test_app/static/js/2.22e6b741.chunk.js.LICENSE",
+    "static/media/logo.svg": "/scrumlogic_test_app/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a763d682.js",
+    "static/js/2.22e6b741.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.17bba2ce.chunk.js"
+  ]
+}
