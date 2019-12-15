@@ -1,0 +1,16 @@
+.radio{
+  max-width: 500px;
+  margin-bottom: 10px;
+
+  .radio__label{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    word-wrap: break-word;
+  }
+
+  input[type=radio] {
+    margin: 4px 10px 1px 5px;
+    line-height: normal;
+  }
+}

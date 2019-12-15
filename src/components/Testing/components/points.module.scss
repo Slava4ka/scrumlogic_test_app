@@ -1,0 +1,102 @@
+@mixin flexing($alignItems) {
+  flex: 0 1 50%;
+  display: flex;
+  align-items: $alignItems;
+  justify-content: center;
+}
+
+%label {
+  font-size: 14px;
+  margin: 0;
+}
+
+.welcomePoint {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .welcomePoint__header {
+    @include flexing(flex-end)
+  }
+
+  .welcomePoint__button {
+    @include flexing(flex-start)
+  }
+}
+
+.label {
+  @extend %label;
+}
+
+.label_margin {
+  margin-bottom: 15px;
+}
+
+.btn {
+  font: inherit;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 0;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  padding: 0.8em 4.5em;
+  color: #ffffff;
+  background-color: #296faf;
+
+  &:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+  }
+
+  &:hover {
+    color: #296faf;
+    border-color: currentColor;
+    background-color: white;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 100, 0.69);
+  }
+}
+
+.btn_margin {
+  margin-top: 15px;
+}
+
+.testPoint {
+  display: flex;
+  flex-direction: column;
+
+  .testPoint__windowHeader {
+
+  }
+
+  .testPoint__headerLabel {
+    @extend %label;
+    font-size: 12px;
+  }
+
+  .testPoint__headerLabel_margin {
+    margin: 8px 16px;
+  }
+
+  .testPoint__question {
+
+  }
+
+  .testPoint__questionLabel {
+    @extend %label;
+  }
+
+  .testPoint__questionLabel_margin {
+    margin: 8px 16px;
+  }
+
+  .testPoint__body_margin {
+    margin: 0  16px;
+  }
+}
+
