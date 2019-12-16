@@ -3,14 +3,22 @@ import style from './points.module.scss'
 import RadioButtonField from '../common/RadioButtonField'
 import { Field, reduxForm } from 'redux-form'
 
-const TestPoint = ({ handleSubmit }) => {
+const TestPoint = ({
+	handleSubmit,
+	testQuestions,
+	questionsQuantity,
+	currentQuestion,
+}) => {
+	console.log(testQuestions[currentQuestion - 1]) // -1 т.к. это массив
+	const question = testQuestions[currentQuestion - 1]
+
 	return (
 		<div className={style.testPoint}>
 			<div className={style.testPoint__windowHeader}>
 				<p
 					className={`${style.testPoint__headerLabel} ${style.testPoint__headerLabel_margin}`}
 				>
-					Пройдено 2 вопроса из 13
+					Пройдено {currentQuestion} вопроса из {questionsQuantity}
 				</p>
 			</div>
 
@@ -18,36 +26,21 @@ const TestPoint = ({ handleSubmit }) => {
 				<p
 					className={`${style.testPoint__questionLabel} ${style.testPoint__questionLabel_margin}`}
 				>
-					Вопрос №2: Текст вопроса
+					Вопрос №{currentQuestion}: {question.question}
 				</p>
 			</div>
 
 			<div className={style.testPoint__body_margin}>
 				<form onSubmit={handleSubmit}>
-					<Field
-						name='question'
-						type='radio'
-						component={RadioButtonField}
-						value={'Ответ 1'}
-					/>
-					<Field
-						name='question'
-						type='radio'
-						component={RadioButtonField}
-						value={'Ответ 2'}
-					/>
-					<Field
-						name='question'
-						type='radio'
-						component={RadioButtonField}
-						value={'Ответ 3'}
-					/>
-					<Field
-						name='question'
-						type='radio'
-						component={RadioButtonField}
-						value={'Ответ 4'}
-					/>
+					{question.answers.map((q, key) => (
+						<Field
+							key={key}
+							name={question.questionId.toString()}
+							type='radio'
+							component={RadioButtonField}
+							value={q.value}
+						/>
+					))}
 				</form>
 			</div>
 		</div>

@@ -4,22 +4,36 @@ import WelcomePoint from './components/WelcomePoint'
 import TestPoint from './components/TestPoint'
 import EndPoint from './components/EndPoint'
 import { connect } from 'react-redux'
+import { addAnswer, testStart } from '../../redux/reducers/testing-reducer'
 
-const getBody = (bodyState, setBodyState, onSubmit, testQuestions) => {
+const getBody = (
+	bodyState,
+	setBodyState,
+	onSubmit,
+	testQuestions,
+	testName,
+	questionsQuantity,
+	isTestStart,
+	currentQuestion,
+	testStart
+) => {
 	switch (bodyState) {
 		case 1:
 			return (
 				<WelcomePoint
 					setBodyState={setBodyState}
-					testTitle={'Заголовок теста'}
+					testName={testName}
+					testStart={testStart}
 				/>
 			)
 		case 2:
 			return (
 				<TestPoint
 					setBodyState={setBodyState}
-					onSubmit={onSubmit}
-					testQuestions={testQuestions}
+					onSubmit={onSubmit} // ответить на вопрос
+					testQuestions={testQuestions} // массив с вопросами
+					questionsQuantity={questionsQuantity} // общее количество вопросов
+					currentQuestion={currentQuestion} // текущий вопрос
 				/>
 			)
 		case 3:
@@ -29,15 +43,37 @@ const getBody = (bodyState, setBodyState, onSubmit, testQuestions) => {
 	}
 }
 
-const Testing = ({ testQuestions }) => {
-	const [bodyState, setState] = useState(2)
+const Testing = ({
+	testQuestions,
+	testName,
+	questionsQuantity,
+	isTestStart,
+	currentQuestion,
+	addAnswer,
+	testStart,
+}) => {
+	const [bodyState, setState] = useState(1)
 
 	const onSubmit = formData => {
-		console.log('rere')
+		addAnswer(formData)
 		console.log(formData)
+		if (currentQuestion === questionsQuantity) setState(3)
+		console.log(
+			`currentQuestion: ${currentQuestion}; questionsQuantity ${questionsQuantity}`
+		)
 	}
 
-	const body = getBody(bodyState, setState, onSubmit, testQuestions)
+	const body = getBody(
+		bodyState,
+		setState,
+		onSubmit,
+		testQuestions,
+		testName,
+		questionsQuantity,
+		isTestStart,
+		currentQuestion,
+		testStart
+	)
 
 	return (
 		<div className={style.testingPage}>
@@ -48,6 +84,10 @@ const Testing = ({ testQuestions }) => {
 
 const mapStateToProps = state => ({
 	testQuestions: state.testingReducer.testQuestions,
+	testName: state.testingReducer.testName,
+	questionsQuantity: state.testingReducer.questionsQuantity,
+	isTestStart: state.testingReducer.isTestStart,
+	currentQuestion: state.testingReducer.currentQuestion,
 })
 
-export default connect(mapStateToProps, {})(Testing)
+export default connect(mapStateToProps, { addAnswer, testStart })(Testing)
