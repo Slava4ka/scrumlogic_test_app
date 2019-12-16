@@ -17,7 +17,9 @@ const initialState = {
 	correctAnswersCounter: 0,
 }
 
-const countTheCorrectAnswers = () => {}
+const countTheCorrectAnswers = () => {
+	return 0
+}
 
 const TestingReducer = (state = initialState, action) => {
 	switch (action.type) {
@@ -38,7 +40,7 @@ const TestingReducer = (state = initialState, action) => {
 		}
 
 		case DROP_USER_ANSWERS: {
-			return { ...state, userAnswers: [] }
+			return { ...state, userAnswers: [], correctAnswersCounter: 0 }
 		}
 
 		case GET_THE_NUMBER_OF_CORRECT_ANSWERS: {

@@ -1,0 +1,25 @@
+@import '../points.module';
+
+.endPoint {
+  display: flex;
+  flex-direction: column;
+
+  .endPoint__text {
+    margin: 0;
+  }
+
+  .endPoint__link {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+  }
+
+  .endPoint__link_margin {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+}
+
+.endPoint__margin {
+  margin: 20px 40px;
+}

@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab79cb85-c9ff-4d76-8480-fa85236019c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Testing/components/EndPoint/EndPoint.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Testing/components/EndPoint/EndPoint.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Testing/Testing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/Testing.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/TestPoint.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/TestPoint.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/WelcomePoint.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/WelcomePoint.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/EndPoint.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/reducers/testing-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/testing-reducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -47,6 +46,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Slava\WebstormProjects\scrumlogic_app\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Slava\WebstormProjects\scrumlogic_app\src\components\Testing\components\EndPoint" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -111,7 +115,7 @@
       <workItem from="1576159181531" duration="7056000" />
       <workItem from="1576228114449" duration="29952000" />
       <workItem from="1576276499352" duration="13587000" />
-      <workItem from="1576487507257" duration="9475000" />
+      <workItem from="1576487507257" duration="16177000" />
     </task>
     <servers />
   </component>
