@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { declOfNum } from '../../../../scripts/countFormatter'
+import { declOfNum } from '../../../../../scripts/countFormatter'
 import style from './EndPoint.module.scss'
 
 const EndPoint = ({

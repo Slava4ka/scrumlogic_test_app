@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import style from './Testing.module.scss'
-import WelcomePoint from './components/WelcomePoint'
-import TestPoint from './components/TestPoint'
-import EndPoint from './components/EndPoint/EndPoint'
+import WelcomePoint from './components/Points/WelcomPoint/WelcomePoint'
+import TestPoint from './components/Points/TestPoint/TestPoint'
+import EndPoint from './components/Points/EndPoint/EndPoint'
 import { connect } from 'react-redux'
 import {
 	setAnswers,

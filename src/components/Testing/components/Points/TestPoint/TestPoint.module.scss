@@ -1,0 +1,35 @@
+@import '../../points.module';
+
+.testPoint {
+  display: flex;
+  flex-direction: column;
+
+  .testPoint__windowHeader {
+
+  }
+
+  .testPoint__headerLabel {
+    @extend %label;
+    font-size: 12px;
+  }
+
+  .testPoint__headerLabel_margin {
+    margin: 8px 16px;
+  }
+
+  .testPoint__question {
+
+  }
+
+  .testPoint__questionLabel {
+    @extend %label;
+  }
+
+  .testPoint__questionLabel_margin {
+    margin: 8px 16px;
+  }
+
+  .testPoint__body_margin {
+    margin: 0  16px;
+  }
+}

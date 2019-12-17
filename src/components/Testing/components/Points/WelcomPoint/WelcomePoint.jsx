@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './points.module.scss'
+import style from '../../points.module.scss'
 
 const WelcomePoint = ({ setBodyState, testName, testStart }) => {
 	const startClickTest = () => {
