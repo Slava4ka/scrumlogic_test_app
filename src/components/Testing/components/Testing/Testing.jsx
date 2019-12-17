@@ -74,6 +74,7 @@ const Testing = ({
 	getNumberOfCorrectAnswers,
 	correctAnswersCounter,
 	nextQuestion,
+	checked,
 }) => {
 	const [bodyState, setState] = useState(1)
 
@@ -108,7 +109,13 @@ const Testing = ({
 
 	return (
 		<div className={style.testingPage}>
-			<div className={style.testingBox}>{body}</div>
+			<div
+				className={`${style.testingBox} ${
+					checked ? style.testingBox_fixSize : style.testingBox_expanding
+				}`}
+			>
+				{body}
+			</div>
 		</div>
 	)
 }

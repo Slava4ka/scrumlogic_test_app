@@ -20,15 +20,17 @@ const EndPoint = ({
 
 	return (
 		<div className={`${style.endPoint} ${style.endPoint__margin}`}>
-			<div>
-				<p className={style.endPoint__text}>Тест завершен.</p>
-				<p className={style.endPoint__text}>Вы правильно ответили</p>
-				<p className={style.endPoint__text}>
-					на {correctAnswersCounter} {declOfNum(correctAnswersCounter)} из{' '}
-					{questionsQuantity}.
-				</p>
+			<div className={style.endPoint__TextBox}>
+				<div>
+					<p className={style.endPoint__text}>Тест завершен.</p>
+					<p className={style.endPoint__text}>Вы правильно ответили</p>
+					<p className={style.endPoint__text}>
+						на {correctAnswersCounter} {declOfNum(correctAnswersCounter)} из{' '}
+						{questionsQuantity}.
+					</p>
+				</div>
 			</div>
-			<div>
+			<div className={style.endPoint__linkBox}>
 				<p
 					className={`${style.endPoint__link} ${style.endPoint__link_margin}`}
 					onClick={() => startNewTest()}

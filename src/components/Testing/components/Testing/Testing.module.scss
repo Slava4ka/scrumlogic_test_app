@@ -7,14 +7,52 @@
 }
 
 .testingBox {
-  min-height: 200px;
-  min-width: 300px;
-
-  max-height: 400px;
-  max-width: 400px;
-
   background: white;
   box-shadow: 0 0 10px #b0b0b0;
   border-radius: 10px;
-  //border: 1px solid black;
+}
+
+.testingBox_fixSize{
+  height: 300px;
+  width: 400px;
+}
+
+.testingBox_expanding{
+  min-height: 200px;
+  max-height: 400px;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+@media screen and (max-width: 450px) {
+
+  .testingBox_fixSize{
+    width: 380px;
+  }
+
+  .testingBox_expanding{
+    max-width: 380px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .testingBox_fixSize{
+    width: 350px;
+  }
+
+  .testingBox_expanding{
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 361px) {
+
+  .testingBox_fixSize{
+    width: 300px;
+  }
+
+  .testingBox_expanding{
+    max-width: 300px;
+  }
 }

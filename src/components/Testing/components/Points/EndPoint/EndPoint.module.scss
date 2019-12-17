@@ -2,6 +2,13 @@
   display: flex;
   flex-direction: column;
 
+  .endPoint__TextBox, .endPoint__linkBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .endPoint__text {
     margin: 0;
   }
