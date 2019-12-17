@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab79cb85-c9ff-4d76-8480-fa85236019c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Testing/components/WindowSwitch/WindowSwitch.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Testing/components/WindowSwitch/WindowSwitch.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/Points/EndPoint/EndPoint.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/Points/EndPoint/EndPoint.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Testing/components/Points/EndPoint/EndPoint.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/Points/EndPoint/EndPoint.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Testing/components/Points/TestPoint/TestPoint.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/Points/TestPoint/TestPoint.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/Testing/Testing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/Testing/Testing.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/Points/WelcomPoint/WelcomePoint.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/Points/WelcomPoint/WelcomePoint.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Testing/components/Testing/Testing.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/Testing/Testing.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/WindowSwitch/WindowSwitch.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/WindowSwitch/WindowSwitch.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/points.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/points.module.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +121,7 @@
       <workItem from="1576228114449" duration="29952000" />
       <workItem from="1576276499352" duration="13587000" />
       <workItem from="1576487507257" duration="49414000" />
-      <workItem from="1576607331230" duration="4677000" />
+      <workItem from="1576607331230" duration="5741000" />
     </task>
     <servers />
   </component>
