@@ -5,11 +5,12 @@ import TestPoint from './components/TestPoint'
 import EndPoint from './components/EndPoint/EndPoint'
 import { connect } from 'react-redux'
 import {
-	addAnswer,
+	setAnswers,
 	dropAnswers,
 	getNumberOfCorrectAnswers,
 	testFinish,
 	testStart,
+	nextQuestion,
 } from '../../redux/reducers/testing-reducer'
 
 const getBody = (
@@ -66,25 +67,28 @@ const Testing = ({
 	questionsQuantity,
 	isTestStart,
 	currentQuestion,
-	addAnswer,
+	setAnswers,
 	testStart,
 	testFinish,
 	dropAnswers,
 	getNumberOfCorrectAnswers,
 	correctAnswersCounter,
+	nextQuestion,
 }) => {
-	const [bodyState, setState] = useState(3)
+	const [bodyState, setState] = useState(1)
 
 	const onSubmit = formData => {
-		addAnswer(formData)
-		console.log(formData)
-		if (currentQuestion === questionsQuantity){
+		//console.log(formData)
+
+		nextQuestion()
+		if (currentQuestion === questionsQuantity) {
+			setAnswers(formData)
 			testFinish()
 			setState(3)
 		}
-		console.log(
+		/*	console.log(
 			`currentQuestion: ${currentQuestion}; questionsQuantity ${questionsQuantity}`
-		)
+		)*/
 	}
 
 	const body = getBody(
@@ -119,9 +123,10 @@ const mapStateToProps = state => ({
 })
 
 export default connect(mapStateToProps, {
-	addAnswer,
+	setAnswers,
 	testStart,
 	testFinish,
 	dropAnswers,
 	getNumberOfCorrectAnswers,
+	nextQuestion,
 })(Testing)

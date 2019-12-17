@@ -2,14 +2,15 @@ import React from 'react'
 import style from './points.module.scss'
 import RadioButtonField from '../common/RadioButtonField'
 import { Field, reduxForm } from 'redux-form'
+import { declOfNum } from '../../../scripts/countFormatter'
 
 const TestPoint = ({
-	handleSubmit,
+	onSubmit,
 	testQuestions,
 	questionsQuantity,
 	currentQuestion,
 }) => {
-	console.log(testQuestions[currentQuestion - 1]) // -1 т.к. это массив
+	//console.log(testQuestions[currentQuestion - 1]) // -1 т.к. это массив
 	const question = testQuestions[currentQuestion - 1]
 
 	return (
@@ -18,7 +19,8 @@ const TestPoint = ({
 				<p
 					className={`${style.testPoint__headerLabel} ${style.testPoint__headerLabel_margin}`}
 				>
-					Пройдено {currentQuestion} вопроса из {questionsQuantity}
+					Пройдено {currentQuestion} {declOfNum(currentQuestion)} из{' '}
+					{questionsQuantity}
 				</p>
 			</div>
 
@@ -31,24 +33,34 @@ const TestPoint = ({
 			</div>
 
 			<div className={style.testPoint__body_margin}>
-				<form onSubmit={handleSubmit}>
-					{question.answers.map((q, key) => (
-						<Field
-							key={key}
-							name={question.questionId.toString()}
-							type='radio'
-							component={RadioButtonField}
-							value={q.value}
-						/>
-					))}
-				</form>
+				{question.answers.map((q, key) => (
+					<TestPointForm
+						key={key}
+						onSubmit={onSubmit}
+						question={question}
+						value={q.value}
+					/>
+				))}
 			</div>
 		</div>
 	)
 }
 
+const TestForm = ({ handleSubmit, question, value }) => {
+	return (
+		<form onSubmit={handleSubmit}>
+			<Field
+				name={`questionId_${question.questionId}`}
+				type='radio'
+				component={RadioButtonField}
+				value={value}
+			/>
+		</form>
+	)
+}
+
 const TestPointForm = reduxForm({
 	form: 'testPoint',
-})(TestPoint)
+})(TestForm)
 
-export default TestPointForm
+export default TestPoint

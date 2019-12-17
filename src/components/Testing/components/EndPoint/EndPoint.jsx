@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { declOfNum } from '../../../../scripts/countFormatter'
 import style from './EndPoint.module.scss'
 
 const EndPoint = ({
@@ -23,7 +24,8 @@ const EndPoint = ({
 				<p className={style.endPoint__text}>Тест завершен.</p>
 				<p className={style.endPoint__text}>Вы правильно ответили</p>
 				<p className={style.endPoint__text}>
-					на {correctAnswersCounter} вопросов из {questionsQuantity}.
+					на {correctAnswersCounter} {declOfNum(correctAnswersCounter)} из{' '}
+					{questionsQuantity}.
 				</p>
 			</div>
 			<div>

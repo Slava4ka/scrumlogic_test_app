@@ -1,6 +1,8 @@
 import data from '../../data.json'
 
-const ADD_USER_ANSWER = 'scrumlogic_app/testing-reducer/ADD-USER-ANSWER'
+const SET_USER_ANSWERS = 'scrumlogic_app/testing-reducer/SET-USER-ANSWERS'
+const SET_NEXT_CURRENT_QUESTION =
+	'scrumlogic_app/testing-reducer/SET-NEXT-CURRENT-QUESTION'
 const DROP_USER_ANSWERS = 'scrumlogic_app/testing-reducer/DROP-USER-ANSWERS'
 const SET_TESTS_START = 'scrumlogic_app/testing-reducer/SET-TESTS-START'
 const SET_TESTS_FINISH = 'scrumlogic_app/testing-reducer/SET-TESTS-FINISH'
@@ -17,17 +19,41 @@ const initialState = {
 	correctAnswersCounter: 0,
 }
 
-const countTheCorrectAnswers = () => {
-	return 0
+const checkAnswers = (questionsArr, answersArr) => {
+	const createObj = (questionId, value, right) => {
+		return { questionId, value, right }
+	}
+
+	return questionsArr.map(question => {
+		const currentAnswer = question.answers.find(
+			answer => answer.value === answersArr[`questionId_${question.questionId}`]
+		)
+		return createObj(
+			question.questionId,
+			currentAnswer.value,
+			currentAnswer.right
+		)
+	})
+}
+
+const countRightAnswers = answers => {
+	return answers.filter(answer => answer.right).length
+}
+
+const countWrongAnswers = answers => {
+	return answers.filter(answer => !answer.right).length
 }
 
 const TestingReducer = (state = initialState, action) => {
 	switch (action.type) {
-		case ADD_USER_ANSWER: {
+		case SET_NEXT_CURRENT_QUESTION: {
+			return { ...state, currentQuestion: state.currentQuestion + 1 }
+		}
+
+		case SET_USER_ANSWERS: {
 			return {
 				...state,
-				userAnswers: [...state.userAnswers, action.value],
-				currentQuestion: state.currentQuestion + 1,
+				userAnswers: action.value,
 			}
 		}
 
@@ -44,7 +70,12 @@ const TestingReducer = (state = initialState, action) => {
 		}
 
 		case GET_THE_NUMBER_OF_CORRECT_ANSWERS: {
-			return { ...state, correctAnswersCounter: countTheCorrectAnswers() }
+			return {
+				...state,
+				correctAnswersCounter: countRightAnswers(
+					checkAnswers(state.testQuestions, state.userAnswers)
+				),
+			}
 		}
 
 		default:
@@ -52,7 +83,9 @@ const TestingReducer = (state = initialState, action) => {
 	}
 }
 
-export const addAnswer = value => ({ type: ADD_USER_ANSWER, value })
+export const nextQuestion = () => ({ type: SET_NEXT_CURRENT_QUESTION })
+
+export const setAnswers = value => ({ type: SET_USER_ANSWERS, value })
 
 export const testStart = () => ({ type: SET_TESTS_START })
 
