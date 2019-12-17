@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab79cb85-c9ff-4d76-8480-fa85236019c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Testing/components/Points/TestPoint/TestPoint.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Testing/components/Points/WelcomPoint/WelcomePoint.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Testing/Testing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/Testing.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Testing/Testing.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/Testing.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/EndPoint/EndPoint.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/Points/EndPoint/EndPoint.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/EndPoint/EndPoint.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/Points/EndPoint/EndPoint.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/TestPoint.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/Points/TestPoint/TestPoint.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/WelcomePoint.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/Points/WelcomPoint/WelcomePoint.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/points.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/points.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Testing/Testing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/Testing/Testing.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Testing/Testing.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/Testing/Testing.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/Points/TestPoint/TestPoint.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/Points/TestPoint/TestPoint.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/Points/TestPoint/TestPoint.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/Points/TestPoint/TestPoint.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/Points/WelcomPoint/WelcomePoint.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/Points/WelcomPoint/WelcomePoint.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +50,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Slava\WebstormProjects\scrumlogic_app\src\components\Testing\components\Testing" />
       <recent name="C:\Users\Slava\WebstormProjects\scrumlogic_app\src\components\Testing\components\Points\WelcomPoint" />
       <recent name="C:\Users\Slava\WebstormProjects\scrumlogic_app\src\components\Testing\components\Points\TestPoint" />
       <recent name="C:\Users\Slava\WebstormProjects\scrumlogic_app\src\components\Testing\components\Points" />
@@ -124,7 +120,7 @@
       <workItem from="1576159181531" duration="7056000" />
       <workItem from="1576228114449" duration="29952000" />
       <workItem from="1576276499352" duration="13587000" />
-      <workItem from="1576487507257" duration="43309000" />
+      <workItem from="1576487507257" duration="44415000" />
     </task>
     <servers />
   </component>

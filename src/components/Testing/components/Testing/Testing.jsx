@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import style from './Testing.module.scss'
-import WelcomePoint from './components/Points/WelcomPoint/WelcomePoint'
-import TestPoint from './components/Points/TestPoint/TestPoint'
-import EndPoint from './components/Points/EndPoint/EndPoint'
+import WelcomePoint from '../Points/WelcomPoint/WelcomePoint'
+import TestPoint from '../Points/TestPoint/TestPoint'
+import EndPoint from '../Points/EndPoint/EndPoint'
 import { connect } from 'react-redux'
 import {
 	setAnswers,
@@ -11,7 +11,7 @@ import {
 	testFinish,
 	testStart,
 	nextQuestion,
-} from '../../redux/reducers/testing-reducer'
+} from '../../../../redux/reducers/testing-reducer'
 
 const getBody = (
 	bodyState,

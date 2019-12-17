@@ -1,5 +1,5 @@
 import React from 'react'
-import style from '../../points.module.scss'
+import style from './TestPoint.module.scss'
 import RadioButtonField from '../../../common/RadioButtonField'
 import { Field, reduxForm } from 'redux-form'
 import { declOfNum } from '../../../../../scripts/countFormatter'
