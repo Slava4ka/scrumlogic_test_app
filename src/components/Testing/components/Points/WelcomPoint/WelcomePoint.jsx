@@ -1,7 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import style from './WelcomePoint.module.scss'
 
-const WelcomePoint = ({ setBodyState, testName, testStart }) => {
+const WelcomePoint = ({
+	setBodyState,
+	testName,
+	testStart,
+	isTestStart,
+	currentQuestion,
+}) => {
+	useEffect(() => {
+		if (isTestStart && currentQuestion > 0) {
+			setBodyState(4)
+		}
+	})
+
 	const startClickTest = () => {
 		setBodyState(2)
 		testStart()

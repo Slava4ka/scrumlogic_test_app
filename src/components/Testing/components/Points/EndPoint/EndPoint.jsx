@@ -14,8 +14,8 @@ const EndPoint = ({
 	})
 
 	const startNewTest = () => {
-		setBodyState(1)
 		dropAnswers()
+		setBodyState(1)
 	}
 
 	return (

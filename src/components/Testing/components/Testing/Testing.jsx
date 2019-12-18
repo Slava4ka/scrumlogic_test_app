@@ -12,6 +12,7 @@ import {
 	testStart,
 	nextQuestion,
 } from '../../../../redux/reducers/testing-reducer'
+import ContinuationPoint from '../Points/ContinuationPoint/ContinuationPoint'
 
 const getBody = (
 	bodyState,
@@ -25,7 +26,8 @@ const getBody = (
 	testStart,
 	dropAnswers,
 	getNumberOfCorrectAnswers,
-	correctAnswersCounter
+	correctAnswersCounter,
+	testFinish
 ) => {
 	switch (bodyState) {
 		case 1:
@@ -34,6 +36,8 @@ const getBody = (
 					setBodyState={setBodyState}
 					testName={testName}
 					testStart={testStart}
+					isTestStart={isTestStart}
+					currentQuestion={currentQuestion}
 				/>
 			)
 		case 2:
@@ -54,6 +58,14 @@ const getBody = (
 					dropAnswers={dropAnswers}
 					getNumberOfCorrectAnswers={getNumberOfCorrectAnswers}
 					correctAnswersCounter={correctAnswersCounter}
+				/>
+			)
+		case 4:
+			return (
+				<ContinuationPoint
+					setBodyState={setBodyState}
+					dropAnswers={dropAnswers}
+					testFinish={testFinish}
 				/>
 			)
 		default:
@@ -79,17 +91,12 @@ const Testing = ({
 	const [bodyState, setState] = useState(1)
 
 	const onSubmit = formData => {
-		//console.log(formData)
-
 		nextQuestion()
+		setAnswers(formData)
 		if (currentQuestion === questionsQuantity) {
-			setAnswers(formData)
 			testFinish()
 			setState(3)
 		}
-		/*	console.log(
-			`currentQuestion: ${currentQuestion}; questionsQuantity ${questionsQuantity}`
-		)*/
 	}
 
 	const body = getBody(
@@ -104,7 +111,8 @@ const Testing = ({
 		testStart,
 		dropAnswers,
 		getNumberOfCorrectAnswers,
-		correctAnswersCounter
+		correctAnswersCounter,
+		testFinish
 	)
 
 	return (
@@ -121,12 +129,12 @@ const Testing = ({
 }
 
 const mapStateToProps = state => ({
-	testQuestions: state.testingReducer.testQuestions,
-	testName: state.testingReducer.testName,
-	questionsQuantity: state.testingReducer.questionsQuantity,
-	isTestStart: state.testingReducer.isTestStart,
-	currentQuestion: state.testingReducer.currentQuestion,
-	correctAnswersCounter: state.testingReducer.correctAnswersCounter,
+	testQuestions: state.testingPresistedStore.testQuestions,
+	testName: state.testingPresistedStore.testName,
+	questionsQuantity: state.testingPresistedStore.questionsQuantity,
+	isTestStart: state.testingPresistedStore.isTestStart,
+	currentQuestion: state.testingPresistedStore.currentQuestion,
+	correctAnswersCounter: state.testingPresistedStore.correctAnswersCounter,
 })
 
 export default connect(mapStateToProps, {

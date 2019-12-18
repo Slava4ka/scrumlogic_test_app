@@ -19,6 +19,11 @@ const initialState = {
 	correctAnswersCounter: 0,
 }
 
+const addAnswer = (obj, property) => {
+	const key = Object.keys(property)[0]
+	return { ...obj, [key]: property[key] }
+}
+
 const checkAnswers = (questionsArr, answersArr) => {
 	const createObj = (questionId, value, right) => {
 		return { questionId, value, right }
@@ -53,7 +58,7 @@ const TestingReducer = (state = initialState, action) => {
 		case SET_USER_ANSWERS: {
 			return {
 				...state,
-				userAnswers: action.value,
+				userAnswers: addAnswer(state.userAnswers, action.value),
 			}
 		}
 

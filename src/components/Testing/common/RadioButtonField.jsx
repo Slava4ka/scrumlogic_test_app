@@ -1,23 +1,17 @@
 import React from 'react'
-import { submit } from 'redux-form'
+import { reset, submit } from 'redux-form'
 import { connect } from 'react-redux'
 import style from './RadioButton.module.scss'
 
-const RadioButtonField = ({
-	input,
-	label,
-	type,
-	meta: { touched, error, warning },
-	disabled,
-	dispatch,
-}) => {
-	const hasError = touched && error
-
+const RadioButtonField = ({ input, type, disabled, dispatch }) => {
 	const onChangeSubmit = () => {
 		input.onChange(input.value)
 		const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 
-		return sleep(1).then(() => dispatch(submit('testPoint')))
+		return sleep(1).then(() => {
+			dispatch(submit('testPoint'))
+			dispatch(reset('testPoint'))
+		})
 	}
 
 	return (
@@ -26,7 +20,7 @@ const RadioButtonField = ({
 				<input
 					{...input}
 					type={type}
-					placeholder={'label'}
+					placeholder={'test'}
 					value={input.value}
 					disabled={disabled}
 					onChange={() => onChangeSubmit()}

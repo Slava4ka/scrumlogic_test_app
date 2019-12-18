@@ -1,14 +1,7 @@
-@import '../../points.module';
+@import '../../_points.module';
 
 .welcomePoint {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  @extend %mainWindow;
 
   .welcomePoint__header {
     @include flexing(flex-end)
@@ -27,38 +20,8 @@
   margin-bottom: 15px;
 }
 
-.btn {
-  font: inherit;
-  cursor: pointer;
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  margin: 2px 0;
-  border: solid 1px transparent;
-  border-radius: 4px;
-  padding: 0.8em 4.5em;
-  color: #ffffff;
-  background-color: #296faf;
-
-  &:active {
-    -webkit-transform: translateY(1px);
-    -ms-transform: translateY(1px);
-    transform: translateY(1px);
-    -webkit-filter: saturate(150%);
-    filter: saturate(150%);
-  }
-
-  &:hover {
-    color: #296faf;
-    border-color: currentColor;
-    background-color: white;
-  }
-
-  &:focus {
-    outline: none;
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 100, 0.69);
-    box-shadow: 0 0 10px rgba(0, 0, 100, 0.69);
-  }
+.btn{
+  @include btn
 }
 
 .btn_margin {

@@ -1,0 +1,30 @@
+@import "../../_points.module";
+
+.continuationPoint {
+  @extend %mainWindow;
+
+  .continuationPoint__header {
+    @include flexing(center)
+  }
+
+  .continuationPoint__buttons {
+    @include flexing(center, row, space-evenly);
+  }
+}
+
+.label {
+  @extend %label;
+}
+
+.label_margin {
+  margin: 0 15px;
+}
+
+.btn {
+  @include btn;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 44%;
+  flex: 0 0 44%;
+  padding: 0.8em 0;
+}
+
