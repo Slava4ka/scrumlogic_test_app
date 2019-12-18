@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab79cb85-c9ff-4d76-8480-fa85236019c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/Testing/Testing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/Testing/Testing.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/WindowSwitch/WindowSwitch.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/WindowSwitch/WindowSwitch.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/testing-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/testing-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
-    </list>
+    <list default="true" id="ab79cb85-c9ff-4d76-8480-fa85236019c5" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +118,7 @@
       <workItem from="1576276499352" duration="13587000" />
       <workItem from="1576487507257" duration="49414000" />
       <workItem from="1576607331230" duration="9118000" />
-      <workItem from="1576666534563" duration="21899000" />
+      <workItem from="1576666534563" duration="22218000" />
     </task>
     <servers />
   </component>
