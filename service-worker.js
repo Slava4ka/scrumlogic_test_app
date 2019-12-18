@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/scrumlogic_test_app/precache-manifest.bec28c3a6e44bfc1c620e3dc464fb7e0.js"
+  "/scrumlogic_test_app/precache-manifest.5143798a59d640858402c06326c1f8d6.js"
 );
 
 self.addEventListener('message', (event) => {
