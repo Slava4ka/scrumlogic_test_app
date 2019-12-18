@@ -7,7 +7,13 @@ import storage from 'redux-persist/lib/storage'
 const TestingPersistConfig = {
 	key: 'testingPresistedStore',
 	storage,
-	whitelist: ['testName', 'isTestStart', 'currentQuestion', 'userAnswers'],
+	whitelist: [
+		'testName',
+		'isTestStart',
+		'currentQuestion',
+		'userAnswers',
+		'screenFixFlag',
+	],
 }
 
 const rootReducer = combineReducers({

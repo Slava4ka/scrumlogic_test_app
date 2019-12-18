@@ -7,14 +7,12 @@ import WindowSwitch from './components/Testing/components/WindowSwitch/WindowSwi
 import { PersistGate } from 'redux-persist/integration/react'
 
 function App() {
-	const [checked, setChecked] = useState(false)
-
 	return (
 		<Provider store={store}>
 			<PersistGate loading={<div>Loading</div>} persistor={persistor}>
 				<div className='App'>
-					<WindowSwitch checked={checked} setChecked={setChecked} />
-					<Testing checked={checked} />
+					<WindowSwitch />
+					<Testing />
 				</div>
 			</PersistGate>
 		</Provider>

@@ -86,7 +86,7 @@ const Testing = ({
 	getNumberOfCorrectAnswers,
 	correctAnswersCounter,
 	nextQuestion,
-	checked,
+	screenFixFlag,
 }) => {
 	const [bodyState, setState] = useState(1)
 
@@ -119,7 +119,7 @@ const Testing = ({
 		<div className={style.testingPage}>
 			<div
 				className={`${style.testingBox} ${
-					checked ? style.testingBox_fixSize : style.testingBox_expanding
+					screenFixFlag ? style.testingBox_fixSize : style.testingBox_expanding
 				}`}
 			>
 				{body}
@@ -135,6 +135,7 @@ const mapStateToProps = state => ({
 	isTestStart: state.testingPresistedStore.isTestStart,
 	currentQuestion: state.testingPresistedStore.currentQuestion,
 	correctAnswersCounter: state.testingPresistedStore.correctAnswersCounter,
+	screenFixFlag: state.testingPresistedStore.screenFixFlag,
 })
 
 export default connect(mapStateToProps, {
