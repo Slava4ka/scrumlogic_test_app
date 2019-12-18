@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/scrumlogic_test_app/static/css/main.e1f7cb94.chunk.css",
-    "main.js": "/scrumlogic_test_app/static/js/main.ed571336.chunk.js",
-    "main.js.map": "/scrumlogic_test_app/static/js/main.ed571336.chunk.js.map",
+    "main.css": "/scrumlogic_test_app/static/css/main.fb48f4b9.chunk.css",
+    "main.js": "/scrumlogic_test_app/static/js/main.87e6990a.chunk.js",
+    "main.js.map": "/scrumlogic_test_app/static/js/main.87e6990a.chunk.js.map",
     "runtime-main.js": "/scrumlogic_test_app/static/js/runtime-main.a763d682.js",
     "runtime-main.js.map": "/scrumlogic_test_app/static/js/runtime-main.a763d682.js.map",
-    "static/js/2.0cbb55d7.chunk.js": "/scrumlogic_test_app/static/js/2.0cbb55d7.chunk.js",
-    "static/js/2.0cbb55d7.chunk.js.map": "/scrumlogic_test_app/static/js/2.0cbb55d7.chunk.js.map",
+    "static/js/2.3e3ee6e3.chunk.js": "/scrumlogic_test_app/static/js/2.3e3ee6e3.chunk.js",
+    "static/js/2.3e3ee6e3.chunk.js.map": "/scrumlogic_test_app/static/js/2.3e3ee6e3.chunk.js.map",
     "index.html": "/scrumlogic_test_app/index.html",
-    "precache-manifest.265ad895031e99f00e660dd57197d4e7.js": "/scrumlogic_test_app/precache-manifest.265ad895031e99f00e660dd57197d4e7.js",
+    "precache-manifest.c6db4f42bd7c3bf7be790ad44887ab0a.js": "/scrumlogic_test_app/precache-manifest.c6db4f42bd7c3bf7be790ad44887ab0a.js",
     "service-worker.js": "/scrumlogic_test_app/service-worker.js",
-    "static/css/main.e1f7cb94.chunk.css.map": "/scrumlogic_test_app/static/css/main.e1f7cb94.chunk.css.map",
-    "static/js/2.0cbb55d7.chunk.js.LICENSE": "/scrumlogic_test_app/static/js/2.0cbb55d7.chunk.js.LICENSE"
+    "static/css/main.fb48f4b9.chunk.css.map": "/scrumlogic_test_app/static/css/main.fb48f4b9.chunk.css.map",
+    "static/js/2.3e3ee6e3.chunk.js.LICENSE": "/scrumlogic_test_app/static/js/2.3e3ee6e3.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.a763d682.js",
-    "static/js/2.0cbb55d7.chunk.js",
-    "static/css/main.e1f7cb94.chunk.css",
-    "static/js/main.ed571336.chunk.js"
+    "static/js/2.3e3ee6e3.chunk.js",
+    "static/css/main.fb48f4b9.chunk.css",
+    "static/js/main.87e6990a.chunk.js"
   ]
 }
