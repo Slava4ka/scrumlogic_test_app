@@ -1,26 +1,11 @@
-.endPoint {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+@import './../../points.module';
 
-  .endPoint__TextBox, .endPoint__linkBox{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+.endPoint {
+  @extend %fullBox;
+  @extend %flexColumnCenterCenter;
+
+  .endPoint__TextBox, .endPoint__linkBox {
+    @extend %flexColumnCenterCenter;
   }
 
   .endPoint__text {
@@ -40,5 +25,5 @@
 }
 
 .endPoint__margin {
-  margin: 20px 40px;
+  margin: 1px;
 }

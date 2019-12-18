@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab79cb85-c9ff-4d76-8480-fa85236019c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Testing/components/Points/ContinuationPoint/ContinuationPoint.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Testing/components/Points/ContinuationPoint/ContinuationPoint.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Testing/components/_points.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Testing/common/RadioButtonField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/common/RadioButtonField.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/Points/EndPoint/EndPoint.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/Points/EndPoint/EndPoint.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/Points/ContinuationPoint/ContinuationPoint.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/Points/ContinuationPoint/ContinuationPoint.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/Points/EndPoint/EndPoint.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/Points/EndPoint/EndPoint.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/Points/TestPoint/TestPoint.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/Points/TestPoint/TestPoint.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Testing/components/Points/WelcomPoint/WelcomePoint.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/Points/WelcomPoint/WelcomePoint.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/Points/WelcomPoint/WelcomePoint.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/Points/WelcomPoint/WelcomePoint.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/Testing/Testing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/Testing/Testing.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/points.module.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/testing-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/testing-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scriptTest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scriptTest2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/Testing/Testing.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/Testing/Testing.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Testing/components/_points.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testing/components/_points.module.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,9 +105,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.deploy" />
         <item itemvalue="Node.js.scriptTest3.js" />
         <item itemvalue="Node.js.scriptTest2.js" />
-        <item itemvalue="npm.deploy" />
         <item itemvalue="Node.js.scriptTest.js" />
       </list>
     </recent_temporary>
@@ -136,7 +127,7 @@
       <workItem from="1576276499352" duration="13587000" />
       <workItem from="1576487507257" duration="49414000" />
       <workItem from="1576607331230" duration="9118000" />
-      <workItem from="1576666534563" duration="11807000" />
+      <workItem from="1576666534563" duration="19691000" />
     </task>
     <servers />
   </component>

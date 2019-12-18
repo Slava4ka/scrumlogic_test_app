@@ -1,20 +1,10 @@
+@import '../points.module';
+
 .testingPage {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  @extend %flexColumnCenterCenter
 }
 
 .testingBox {
@@ -22,14 +12,15 @@
   -webkit-box-shadow: 0 0 10px #b0b0b0;
   box-shadow: 0 0 10px #b0b0b0;
   border-radius: 10px;
+  display: flex;
 }
 
-.testingBox_fixSize{
+.testingBox_fixSize {
   height: 300px;
   width: 400px;
 }
 
-.testingBox_expanding{
+.testingBox_expanding {
   min-height: 200px;
   max-height: 400px;
   min-width: 300px;
@@ -38,33 +29,33 @@
 
 @media screen and (max-width: 450px) {
 
-  .testingBox_fixSize{
+  .testingBox_fixSize {
     width: 380px;
   }
 
-  .testingBox_expanding{
+  .testingBox_expanding {
     max-width: 380px;
   }
 }
 
 @media screen and (max-width: 400px) {
 
-  .testingBox_fixSize{
+  .testingBox_fixSize {
     width: 350px;
   }
 
-  .testingBox_expanding{
+  .testingBox_expanding {
     max-width: 350px;
   }
 }
 
 @media screen and (max-width: 361px) {
 
-  .testingBox_fixSize{
+  .testingBox_fixSize {
     width: 300px;
   }
 
-  .testingBox_expanding{
+  .testingBox_expanding {
     max-width: 300px;
   }
 }
