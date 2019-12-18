@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/scrumlogic_test_app/static/css/main.fb48f4b9.chunk.css",
-    "main.js": "/scrumlogic_test_app/static/js/main.87e6990a.chunk.js",
-    "main.js.map": "/scrumlogic_test_app/static/js/main.87e6990a.chunk.js.map",
+    "main.js": "/scrumlogic_test_app/static/js/main.1fa8cf5b.chunk.js",
+    "main.js.map": "/scrumlogic_test_app/static/js/main.1fa8cf5b.chunk.js.map",
     "runtime-main.js": "/scrumlogic_test_app/static/js/runtime-main.a763d682.js",
     "runtime-main.js.map": "/scrumlogic_test_app/static/js/runtime-main.a763d682.js.map",
     "static/js/2.3e3ee6e3.chunk.js": "/scrumlogic_test_app/static/js/2.3e3ee6e3.chunk.js",
     "static/js/2.3e3ee6e3.chunk.js.map": "/scrumlogic_test_app/static/js/2.3e3ee6e3.chunk.js.map",
     "index.html": "/scrumlogic_test_app/index.html",
-    "precache-manifest.c6db4f42bd7c3bf7be790ad44887ab0a.js": "/scrumlogic_test_app/precache-manifest.c6db4f42bd7c3bf7be790ad44887ab0a.js",
+    "precache-manifest.bec28c3a6e44bfc1c620e3dc464fb7e0.js": "/scrumlogic_test_app/precache-manifest.bec28c3a6e44bfc1c620e3dc464fb7e0.js",
     "service-worker.js": "/scrumlogic_test_app/service-worker.js",
     "static/css/main.fb48f4b9.chunk.css.map": "/scrumlogic_test_app/static/css/main.fb48f4b9.chunk.css.map",
     "static/js/2.3e3ee6e3.chunk.js.LICENSE": "/scrumlogic_test_app/static/js/2.3e3ee6e3.chunk.js.LICENSE"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.a763d682.js",
     "static/js/2.3e3ee6e3.chunk.js",
     "static/css/main.fb48f4b9.chunk.css",
-    "static/js/main.87e6990a.chunk.js"
+    "static/js/main.1fa8cf5b.chunk.js"
   ]
 }
