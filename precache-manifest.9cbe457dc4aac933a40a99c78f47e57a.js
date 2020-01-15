@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c27d8245912085a549f602e4f7d88771",
+    "revision": "ad02b46df88751cb4e2ed40e98e90420",
     "url": "/scrumlogic_test_app/index.html"
   },
   {
-    "revision": "98f64496e1dabf8523ac",
-    "url": "/scrumlogic_test_app/static/css/main.a7e88993.chunk.css"
+    "revision": "4f13ad2b6f36c3dc8db1",
+    "url": "/scrumlogic_test_app/static/css/main.6bdb713b.chunk.css"
   },
   {
     "revision": "22a3c2902e95a6dec0f7",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/scrumlogic_test_app/static/js/2.7c343fe7.chunk.js.LICENSE"
   },
   {
-    "revision": "98f64496e1dabf8523ac",
+    "revision": "4f13ad2b6f36c3dc8db1",
     "url": "/scrumlogic_test_app/static/js/main.cfb0c1f6.chunk.js"
   },
   {
